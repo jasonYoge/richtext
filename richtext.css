@@ -1,0 +1,64 @@
+.rich-text {
+	margin: 10px 5px;
+	height: 300px;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	outline: none;
+	padding: 5px;
+	font-size: 16px;
+	overflow-y: auto;
+}
+
+.rich-text:active, .rich-text:hover, .rich-text:link {
+	outline: none;
+}
+
+.rich-text p {
+	margin: 10px;
+}
+
+.panel {
+	position: absolute;
+	width: 260px;
+	background: #1d193d;
+	display: none;
+	border-radius: 4px;
+	margin-left: 50%;
+	left: -130px;
+	font-size: 20px;
+}
+
+.panel span {
+	color: white;
+	display: block;
+	padding: 5px;
+	flex: 1;
+	text-align: center;
+	z-index: 30;
+}
+
+.panel span:not(:first-child) {
+	border-left: 1px solid #eee;
+}
+
+.panel span:active {
+	background: #A3A3A3;
+}
+
+.panel:before {
+	position: absolute;
+	background: #1d193d;
+	width: 15px;
+	height: 15px;
+	bottom: -7.5px;
+	margin-left: 50%;
+	left: -7.5px;
+	content: '';
+	transform: rotate(-45deg);
+	z-index: 20;
+}
+
+.rich-text img {
+	width: 100%;
+	height: auto;
+}
